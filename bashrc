@@ -142,6 +142,6 @@ preexec() {
 trap 'preexec' DEBUG
 
 #allows for system-dependent additions
-if [ -f ~/.local.bashrc ]; then
-    . ~/.local.bashrc
+if [ -f "$HOME/.local.bashrc" ]; then
+    . "$HOME/.local.bashrc"
 fi

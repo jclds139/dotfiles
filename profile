@@ -26,5 +26,7 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
-# include local mods
-. $HOME/.local.profile
+#allows for system-dependent additions
+if [ -f "$HOME/.local.profile" ]; then
+    . "$HOME/.local.profile"
+fi
