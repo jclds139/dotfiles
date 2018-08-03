@@ -1,0 +1,2 @@
+source $HOME/dotfiles/screenrc-example/.screenrc-main-example
+source $HOME/dotfiles/tmux-ssh/.screenrc

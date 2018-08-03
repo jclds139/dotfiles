@@ -1,0 +1,20 @@
+[user]
+	name = Jesse R Codling
+	email = jclds139@gmail.com
+
+[diff "zip"]
+	textconv = unzip -c -a
+[diff "xlsx"]
+	textconv = unzip -c -a
+[diff "docx"]
+	textconv = unzip -c -a
+[diff "pptx"]
+	textconv = unzip -c -a
+[diff]
+	tool = gvimdiff
+[merge]
+	tool = gvimdiff
+[push]
+	default = matching
+[core]
+	fileMode = false
