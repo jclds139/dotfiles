@@ -1,0 +1,3 @@
+[submodule "screenrc-example"]
+	path = screenrc-example
+	url = https://gist.github.com/1337178.git
