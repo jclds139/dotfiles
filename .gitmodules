@@ -1,3 +1,6 @@
 [submodule "screenrc-example"]
 	path = screenrc-example
 	url = https://gist.github.com/1337178.git
+[submodule "vim"]
+	path = vim
+	url = https://github.com/jclds139/.vim.git
