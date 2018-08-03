@@ -113,7 +113,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
-set -o noclobber
+#set -o noclobber
 
 # Mosty straight from http://alexteichman.com/octo/blog/2014/01/01/x11-forwarding-and-terminal-multiplexers/
 # -- Improved X11 forwarding through GNU Screen (or tmux).
