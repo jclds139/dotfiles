@@ -9,6 +9,11 @@ case $- in
       *) return;;
 esac
 
+#allows for system-dependent additions
+if [ -f "$HOME/.local.bashrc" ]; then
+    . "$HOME/.local.bashrc"
+fi
+
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
@@ -140,8 +145,3 @@ preexec() {
 #echo DISPLAY = $DISPLAY, display.txt = `cat ~/.display.txt`, STY = $STY, TMUX = $TMUX  
 }
 trap 'preexec' DEBUG
-
-#allows for system-dependent additions
-if [ -f "$HOME/.local.bashrc" ]; then
-    . "$HOME/.local.bashrc"
-fi
