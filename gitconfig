@@ -2,6 +2,9 @@
 	name = Jesse R Codling
 	email = jclds139@gmail.com
 
+[include]
+	~/.local.gitconfig
+
 [diff "zip"]
 	textconv = unzip -c -a
 [diff "xlsx"]
