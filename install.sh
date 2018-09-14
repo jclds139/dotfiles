@@ -1,9 +1,9 @@
 #!/bin/bash
-if [ "$(basename $(pwd))" != "dotfiles" ]; then
+if [ "$PWD" != "$HOME/dotfiles" ]; then
 	echo "Must be run inside dotfiles directory"
 else
 
-	for file in $(find . -maxdepth 1 -type f | grep --color=no "\./[^.]"); do
+	for file in $("ls"); do
 		fn=$(basename "$file")
 		if [ -e "$HOME/.$fn" ]; then
 			mv -v "$HOME/.$fn" "$HOME/.local.""$fn"
@@ -15,16 +15,10 @@ else
 	done
 
 	if [ -d "$HOME/.ssh" ]; then #if we have an ssh setup, link the rc
-		ln -sv "$(pwd)/tmux-ssh/.ssh rc" "$HOME/.ssh/rc"
-	fi
-
-	if [ -d "$HOME/.vim" ]; then #remove 
-		mv -v "$HOME/.vim" "$HOME/.local.vim"
+		ln -sv "$(pwd)/.tmux-ssh/.ssh rc" "$HOME/.ssh/rc"
 	fi
 
 	if [ -e "$HOME/.vimrc" ]; then
 		mv -v "$HOME/.vimrc" "$HOME/.local.vimrc"
 	fi
-
-	ln -sv "$(pwd)/vim" "$HOME/.vim"
 fi
