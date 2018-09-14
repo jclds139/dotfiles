@@ -3,7 +3,7 @@
 	email = jclds139@gmail.com
 
 [include]
-	~/.local.gitconfig
+	path = ~/.local.gitconfig
 
 [diff "zip"]
 	textconv = unzip -c -a
