@@ -145,3 +145,6 @@ preexec() {
 #echo DISPLAY = $DISPLAY, display.txt = `cat ~/.display.txt`, STY = $STY, TMUX = $TMUX  
 }
 trap 'preexec' DEBUG
+
+#zsh setup
+export ZSH=$HOME/.oh-my-zsh
