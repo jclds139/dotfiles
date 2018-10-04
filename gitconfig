@@ -19,5 +19,3 @@
 	tool = gvimdiff
 [push]
 	default = matching
-[core]
-	fileMode = false
