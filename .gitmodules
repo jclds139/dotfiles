@@ -4,6 +4,3 @@
 [submodule "screenrc-example"]
 	path = .screenrc-example
 	url = https://gist.github.com/fc642c4403053e5ad71553ebfb0a8f0a.git
-[submodule "oh-my-zsh"]
-	path = oh-my-zsh
-	url = https://github.com/robbyrussell/oh-my-zsh.git
