@@ -6,7 +6,7 @@ else
 	for file in $("ls"); do
 		fn=$(basename "$file")
 		if [ -e "$HOME/.$fn" ]; then
-			mv -v "$HOME/.$fn" "$HOME/.local.""$fn"
+			mv -v "$HOME/.$fn" "$HOME/old.""$fn"
 		fi
 
 		if [ $fn != "install.sh" ]; then # don't link the installer script
@@ -19,6 +19,6 @@ else
 	fi
 
 	if [ -e "$HOME/.vimrc" ]; then
-		mv -v "$HOME/.vimrc" "$HOME/.local.vimrc"
+		mv -v "$HOME/.vimrc" "$HOME/.old.vimrc"
 	fi
 fi

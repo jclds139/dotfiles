@@ -9,8 +9,8 @@
 #umask 022
 
 #allows for system-dependent additions
-if [ -f "$HOME/.local.profile" ]; then
-    . "$HOME/.local.profile"
+if [ -f "$HOME/.local/.profile" ]; then
+    . "$HOME/.local/.profile"
 fi
 
 # if running bash

@@ -10,8 +10,8 @@ case $- in
 esac
 
 #allows for system-dependent additions
-if [ -f "$HOME/.local.bashrc" ]; then
-    . "$HOME/.local.bashrc"
+if [ -f "$HOME/.local/.bashrc" ]; then
+    . "$HOME/.local/.bashrc"
 fi
 
 colors() {
@@ -131,7 +131,6 @@ unset use_color safe_term match_lhs sh
 
 alias cp="cp -i"                          # confirm before overwriting something
 alias df='df -h'                          # human-readable sizes
-alias free='free -m'                      # show sizes in MB
 
 # colored GCC warnings and errors
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
