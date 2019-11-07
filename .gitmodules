@@ -1,6 +1,7 @@
 [submodule "vim"]
 	path = vim
 	url = https://github.com/jclds139/.vim.git
+	branch = master
 [submodule "screenrc-example"]
 	path = .screenrc-example
 	url = https://gist.github.com/fc642c4403053e5ad71553ebfb0a8f0a.git

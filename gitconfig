@@ -19,3 +19,5 @@
 	tool = gvimdiff
 [push]
 	default = matching
+[core]
+	autocrlf = input
