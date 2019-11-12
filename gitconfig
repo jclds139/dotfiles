@@ -14,9 +14,9 @@
 [diff "pptx"]
 	textconv = unzip -c -a
 [diff]
-	tool = gvimdiff
+	tool = vimdiff
 [merge]
-	tool = gvimdiff
+	tool = vimdiff
 [push]
 	default = matching
 [core]

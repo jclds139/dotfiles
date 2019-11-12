@@ -21,4 +21,10 @@ else
 	if [ -e "$HOME/.vimrc" ]; then
 		mv -v "$HOME/.vimrc" "$HOME/.old.vimrc"
 	fi
+
+	if [ -z "$XDG_CONFIG_HOME" ]; then
+		ln -sv "$HOME/.vim" "$HOME/.config/nvim"
+	else
+		ln -sv "$HOME/.vim" "$XDG_CONFIG_HOME/nvim"
+	fi
 fi
