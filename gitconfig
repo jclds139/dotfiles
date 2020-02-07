@@ -2,9 +2,6 @@
 	name = Jesse R Codling
 	email = jclds139@gmail.com
 
-[include]
-	path = ~/.local/.gitconfig
-
 [diff "zip"]
 	textconv = unzip -c -a
 [diff "xlsx"]
@@ -21,3 +18,6 @@
 	default = matching
 [core]
 	autocrlf = input
+
+[include]
+	path = ~/.local/.gitconfig
