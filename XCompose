@@ -21,6 +21,8 @@ include "%L"
 <Multi_key> <g> <W> : "Ω"    U03A9    # GREEK CAPITAL LETTER OMEGA
 <Multi_key> <g> <Q> : "Θ"    U0398    # GREEK CAPITAL LETTER THETA
 <Multi_key> <g> <O> : "Ο"    U039F    # GREEK CAPITAL LETTER OMICRON
+<Multi_key> <g> <J> : "Ξ"    U039E    # GREEK CAPITAL LETTER XI
+<Multi_key> <g> <C> : "Ψ"    U03A8    # GREEK CAPITAL LETTER PSI
 
 # DOUBLES
 <Multi_key> <g> <X> <s> : "Ξ"    U039E    # GREEK CAPITAL LETTER XI
@@ -51,6 +53,9 @@ include "%L"
 <Multi_key> <g> <w> : "ω"    U03C9    # GREEK SMALL LETTER OMEGA
 <Multi_key> <g> <q> : "θ"    U03B8    # GREEK SMALL LETTER THETA
 <Multi_key> <g> <o> : "ο"    U03BF    # GREEK SMALL LETTER OMICRON
+<Multi_key> <g> <j> : "ξ"    U03BE    # GREEK SMALL LETTER XI
+<Multi_key> <g> <c> : "ψ"    U03C8    # GREEK SMALL LETTER PSI
+<Multi_key> <g> <v> : "ς"    U03C2    # GREEK SMALL LETTER FINAL SIGMA
 
 # doubles
 <Multi_key> <g> <p> <s> : "ψ"    U03C8    # GREEK SMALL LETTER PSI
