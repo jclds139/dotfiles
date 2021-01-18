@@ -30,3 +30,6 @@ fi
 if [ -f "$HOME/.local/.profile" ]; then
     . "$HOME/.local/.profile"
 fi
+
+# timeout console sessions after 5 minutes (300 seconds)
+tty | grep -c tty >/dev/null && TMOUT=300
