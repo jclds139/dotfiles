@@ -1,0 +1,4 @@
+[ -d $HOME/.bash_completion.d ] && for completion_file in $HOME/.bash_completion.d/*
+do
+    test -r "$completion_file" && . "$completion_file"
+done
