@@ -21,3 +21,5 @@
 
 [include]
 	path = ~/.local/.gitconfig
+[rerere]
+	enabled = true
