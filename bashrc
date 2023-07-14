@@ -168,9 +168,11 @@ function update-x11-forwarding
 {
 	if [ -z "$STY" -a -z "$TMUX" ]; then
 		echo $DISPLAY >| ~/.ssh/display
-	else
+	elif [ ! -z `cat ~/.ssh/display` ]; then
+		# make no changes if there's no saved variable
 		export DISPLAY=`cat ~/.ssh/display`
-			fi
+	fi
+
 }
 
 # This is run before every command.
