@@ -18,6 +18,8 @@
 	default = matching
 [core]
 	autocrlf = input
+[color]
+	ui = auto
 
 [include]
 	path = ~/.local/.gitconfig

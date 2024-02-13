@@ -32,4 +32,4 @@ if [ -f "$HOME/.local/.profile" ]; then
 fi
 
 # timeout console sessions after 5 minutes (300 seconds)
-readlink /proc/self/fd/1 | grep -c tty >/dev/null && TMOUT=300
+readlink /proc/self/fd/0 | grep -c tty >/dev/null && TMOUT=300
