@@ -158,6 +158,10 @@ elif [ -f /etc/bash_completion ]; then
   . /etc/bash_completion
 fi
 
+if command -v pew >/dev/null; then
+	. "$(pew shell_config)"
+fi
+
 set -o noclobber
 
 # Mosty straight from http://alexteichman.com/octo/blog/2014/01/01/x11-forwarding-and-terminal-multiplexers/
