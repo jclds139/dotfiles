@@ -3,7 +3,7 @@ if [ "$PWD" != "$HOME/dotfiles" ]; then
 	echo "Must be run inside dotfiles directory"
 else
 
-	for file in $("ls"); do
+	for file in *; do
 		fn=$(basename "$file")
 		if [ -e "$HOME/.$fn" ]; then
 			mv -v "$HOME/.$fn" "$HOME/old.""$fn"
@@ -23,8 +23,14 @@ else
 	fi
 
 	if [ -z "$XDG_CONFIG_HOME" ]; then
-		ln -sv "$HOME/.vim" "$HOME/.config/nvim"
-	else
-		ln -sv "$HOME/.vim" "$XDG_CONFIG_HOME/nvim"
+		XDG_CONFIG_HOME="$HOME/.config"
 	fi
+	ln -sv "$HOME/.vim" "$XDG_CONFIG_HOME/nvim"
+	for any in "$(pwd)/.config/"*; do
+		fn=$(basename "$any")
+		if [ -e "$XDG_CONFIG_HOME/$fn" ]; then
+			mv -v "$XDG_CONFIG_HOME/$fn" "$XDG_CONFIG_HOME/old.""$fn"
+		fi
+		ln -sv "$(pwd)/.config/$fn" "$XDG_CONFIG_HOME/$fn"
+	done
 fi

@@ -160,6 +160,8 @@ fi
 
 if command -v pew >/dev/null; then
 	. "$(pew shell_config)"
+elif command -v $HOME/bin/pew >/dev/null; then
+	. "$($HOME/bin/pew shell_config)"
 fi
 
 set -o noclobber
