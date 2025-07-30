@@ -164,6 +164,14 @@ elif command -v $HOME/bin/pew >/dev/null; then
 	. "$($HOME/bin/pew shell_config)"
 fi
 
+if [ -f /usr/bin/virtualenvwrapper_lazy.sh ]; then
+	source /usr/bin/virtualenvwrapper_lazy.sh
+elif [ -f /usr/local/bin/virtualenvwrapper_lazy.sh ]; then
+	source /usr/local/bin/virtualenvwrapper_lazy.sh
+elif [ -f $HOME/bin/virtualenvwrapper_lazy.sh ]; then
+	source $HOME/bin/virtualenvwrapper_lazy.sh
+fi
+
 set -o noclobber
 
 if [ -n "$TMUX" ]; then
