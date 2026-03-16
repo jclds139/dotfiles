@@ -77,15 +77,15 @@ include "%L"
 <Multi_key> <a> <o> <k>		: "👌" 	U1F44C 	# OK HAND SIGN
 <Multi_key> <t> <u> 		: "👍" 	U1F44D 	# THUMBS UP SIGN
 <Multi_key> <t> <d> 		: "👎" 	U1F44E 	# THUMBS DOWN SIGN
+<Multi_key> <t> <d> 		: "👎" 	U1F44E 	# THUMBS DOWN SIGN
+<Multi_key> <w> <a> <r> <n> 	: "⚠️" 	U26A0 	# WARNING SIGN
 
 # Note Symbols
-<Multi_key> <bar> <minus> 	: "†" U2020 # DAGGER
-<Multi_key> <bar> <equal> 	: "‡" U2021 # DOUBLE DAGGER
-<Multi_key> <backslash> <s> : "§"	section # SECTION SIGN
-<Multi_key> <bar> <s> 	    : "§"	section # SECTION SIGN
-<Multi_key> <bar> <bar> 	: "‖" U2016 # DOUBLE VERTICAL BAR
-
-
+<Multi_key> <bar> <minus> 	: "†" 	U2020 	# DAGGER
+<Multi_key> <bar> <equal> 	: "‡" 	U2021 	# DOUBLE DAGGER
+<Multi_key> <backslash> <s> 	: "§" 	U00A47 	# SECTION SIGN
+<Multi_key> <bar> <s> 	    	: "§" 	U00A47 	# SECTION SIGN
+<Multi_key> <bar> <bar> 	: "‖" 	U2016 	# DOUBLE VERTICAL BAR
 
 
 ## Temperature

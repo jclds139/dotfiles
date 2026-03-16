@@ -14,6 +14,7 @@
 	tool = vimdiff
 [merge]
 	tool = vimdiff
+	conflictStyle = zdiff3
 [push]
 	default = matching
 [core]
