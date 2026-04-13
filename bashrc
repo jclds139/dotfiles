@@ -64,6 +64,7 @@ safe_term=${TERM//[^[:alnum:]]/?} # sanitize TERM
 match_lhs=""
 [[ -f ~/.dir_colors ]] && match_lhs="${match_lhs}$(<~/.dir_colors)"
 [[ -f /etc/DIR_COLORS ]] && match_lhs="${match_lhs}$(</etc/DIR_COLORS)"
+[[ -f ~/../usr/etc/DIR_COLORS ]] && match_lhs="${match_lhs}$(<~/../usr/etc/DIR_COLORS)"
 [[ -z ${match_lhs} ]] &&
 	type -P dircolors >/dev/null &&
 	match_lhs=$(dircolors --print-database)
@@ -76,6 +77,8 @@ if ${use_color}; then
 			eval $(dircolors -b ~/.dir_colors)
 		elif [[ -f /etc/DIR_COLORS ]]; then
 			eval $(dircolors -b /etc/DIR_COLORS)
+		elif [[ -f ~/../usr/etc/DIR_COLORS ]]; then
+			eval $(dircolors -b ~/../usr/etc/DIR_COLORS)
 		fi
 	fi
 
@@ -127,6 +130,10 @@ if [ -f /usr/share/bash-completion/bash_completion ]; then
 	. /usr/share/bash-completion/bash_completion
 elif [ -f /etc/bash_completion ]; then
 	. /etc/bash_completion
+elif [ -f "$HOME/../usr/share/bash-completion/bash_completion" ]; then
+	. "$HOME/../usr/share/bash-completion/bash_completion"
+elif [ -f "$HOME/../usr/etc/bash_completion" ]; then
+	. "$HOME/../usr/etc/bash_completion"
 fi
 
 if command -v pew >/dev/null; then
@@ -139,6 +146,8 @@ if [ -f /usr/bin/virtualenvwrapper_lazy.sh ]; then
 	source /usr/bin/virtualenvwrapper_lazy.sh
 elif [ -f /usr/local/bin/virtualenvwrapper_lazy.sh ]; then
 	source /usr/local/bin/virtualenvwrapper_lazy.sh
+elif [ -f $HOME/../usr/bin/virtualenvwrapper_lazy.sh ]; then
+	source $HOME/../usr/bin/virtualenvwrapper_lazy.sh
 elif [ -f $HOME/bin/virtualenvwrapper_lazy.sh ]; then
 	source $HOME/bin/virtualenvwrapper_lazy.sh
 fi

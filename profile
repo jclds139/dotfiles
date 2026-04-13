@@ -47,6 +47,11 @@ if [ -d "$HOME/.cargo/bin/" ]; then
     prepend_path "$HOME/.cargo/bin"
 fi
 
+# Go packages from `go install`
+if [ -d "$HOME/go/bin/" ]; then
+    prepend_path "$HOME/go/bin"
+fi
+
 #allows for system-dependent additions
 if [ -f "$HOME/.local/.profile" ]; then
     . "$HOME/.local/.profile"
@@ -56,7 +61,7 @@ unset -f prepend_path
 
 export PATH
 
-if command -v dbus-update-activation-environment >/dev/null; then
+if ! [ -z "$DBUS_SESSION_BUS_ADDRESS" ] && command -v dbus-update-activation-environment >/dev/null; then
     dbus-update-activation-environment --systemd --all
     # add system variables to dbus and systemd --user
 fi

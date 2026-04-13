@@ -17,18 +17,20 @@ include "%L"
 <Multi_key> <g> <T>		: "Τ" 	U03A4	# GREEK CAPITAL LETTER TAU
 <Multi_key> <g> <U>		: "Υ" 	U03A5	# GREEK CAPITAL LETTER UPSILON
 <Multi_key> <g> <F>		: "Φ" 	U03A6	# GREEK CAPITAL LETTER PHI
-<Multi_key> <g> <X>		: "Χ" 	U03A7	# GREEK CAPITAL LETTER CHI
+# <Multi_key> <g> <X>		: "Χ" 	U03A7	# GREEK CAPITAL LETTER CHI
 <Multi_key> <g> <W>		: "Ω" 	U03A9	# GREEK CAPITAL LETTER OMEGA
 <Multi_key> <g> <Q>		: "Θ" 	U0398	# GREEK CAPITAL LETTER THETA
 <Multi_key> <g> <O>		: "Ο" 	U039F	# GREEK CAPITAL LETTER OMICRON
 <Multi_key> <g> <J>		: "Ξ" 	U039E	# GREEK CAPITAL LETTER XI
-<Multi_key> <g> <C>		: "Ψ" 	U03A8	# GREEK CAPITAL LETTER PSI
+# <Multi_key> <g> <C>		: "Ψ" 	U03A8	# GREEK CAPITAL LETTER PSI
 
 # DOUBLES
 <Multi_key> <g> <X> <s>		: "Ξ" 	U039E	# GREEK CAPITAL LETTER XI
 <Multi_key> <g> <X> <S>		: "Ξ" 	U039E	# GREEK CAPITAL LETTER XI
 <Multi_key> <g> <P> <s>		: "Ψ" 	U03A8	# GREEK CAPITAL LETTER PSI
 <Multi_key> <g> <P> <S>		: "Ψ" 	U03A8	# GREEK CAPITAL LETTER PSI
+<Multi_key> <g> <C> <H>		: "Χ" 	U03A7	# GREEK CAPITAL LETTER CHI
+<Multi_key> <g> <C> <h>		: "Χ" 	U03A7	# GREEK CAPITAL LETTER CHI
 
 # greek small letters
 <Multi_key> <g> <a>		: "α" 	U03B1	# GREEK SMALL LETTER ALPHA
@@ -49,18 +51,19 @@ include "%L"
 <Multi_key> <g> <t>		: "τ" 	U03C4	# GREEK SMALL LETTER TAU
 <Multi_key> <g> <u>		: "υ" 	U03C5	# GREEK SMALL LETTER UPSILON
 <Multi_key> <g> <f>		: "φ" 	U03C6	# GREEK SMALL LETTER PHI
-<Multi_key> <g> <x>		: "χ" 	U03C7	# GREEK SMALL LETTER CHI
+# <Multi_key> <g> <x>		: "χ" 	U03C7	# GREEK SMALL LETTER CHI
 <Multi_key> <g> <w>		: "ω" 	U03C9	# GREEK SMALL LETTER OMEGA
 <Multi_key> <g> <q>		: "θ" 	U03B8	# GREEK SMALL LETTER THETA
 <Multi_key> <g> <o>		: "ο" 	U03BF	# GREEK SMALL LETTER OMICRON
 <Multi_key> <g> <j>		: "ξ" 	U03BE	# GREEK SMALL LETTER XI
-<Multi_key> <g> <c>		: "ψ" 	U03C8	# GREEK SMALL LETTER PSI
+# <Multi_key> <g> <c>		: "ψ" 	U03C8	# GREEK SMALL LETTER PSI
 <Multi_key> <g> <v>		: "ς" 	U03C2	# GREEK SMALL LETTER FINAL SIGMA
 
 # doubles
 <Multi_key> <g> <p> <s>		: "ψ" 	U03C8	# GREEK SMALL LETTER PSI
-<Multi_key> <g> <s> <s>		: "ς" 	U03C2	# GREEK SMALL LETTER FINAL SIGMA
+<Multi_key> <g> <period> <s>	: "ς" 	U03C2	# GREEK SMALL LETTER FINAL SIGMA
 <Multi_key> <g> <x> <s>		: "ξ" 	U03BE	# GREEK SMALL LETTER XI
+<Multi_key> <g> <c> <h>		: "χ" 	U03C7	# GREEK SMALL LETTER CHI
 
 # check marks
 <Multi_key> <o> <k>		: "✓" 	U2713	# CHECK MARK
@@ -68,7 +71,7 @@ include "%L"
 <Multi_key> <n> <o>		: "✗" 	U2717	# BALLOT X — <x> <x> taken by Xorg for multiply
 <Multi_key> <O> <K>		: "✔" 	U2714	# HEAVY CHECK MARK
 <Multi_key> <N> <O>		: "✘" 	U2718	# HEAVY BALLOT X
-<Multi_key> <X> <X>		: "✘" 	U2718	# HEAVY BALLOT X
+<Multi_key> <X> <X>		: "❌" 	U274C	# CROSS MARK
 
 # Emoji
 <Multi_key> <i> <d> <e> <a> 	: "💡" 	U1F4A1	# ELECTRIC LIGHT BULB
