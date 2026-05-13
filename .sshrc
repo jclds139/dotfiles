@@ -1,0 +1,6 @@
+#!/bin/bash
+
+if ! [ -z "$SSH_AUTH_SOCK" ]; then
+	mkdir -p "$HOME/.ssh/agent/"
+	ln -sf "$SSH_AUTH_SOCK" "$HOME/.ssh/agent/current"
+fi

@@ -15,7 +15,7 @@ else
 	done
 
 	if [ -d "$HOME/.ssh" ]; then #if we have an ssh setup, link the rc
-		ln -sv "$(pwd)/.tmux-ssh/.ssh rc" "$HOME/.ssh/rc"
+		ln -sv "$(pwd)/.sshrc" "$HOME/.ssh/rc"
 	fi
 
 	if [ -e "$HOME/.vimrc" ]; then
